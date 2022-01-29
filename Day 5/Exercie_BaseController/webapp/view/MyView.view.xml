@@ -1,0 +1,23 @@
+<mvc:View xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+                controllerName="mickey.controller.MyView">
+    <!-- <Input id="myField" />
+    <Button text="Click My Btn" press="onClick" /> -->
+    <f:SimpleForm editable="true">
+        <f:content>
+            <Label text="Employee ID" />
+            <Input id="idEmpId" value="{/empStr/empId}"/>
+            <Label text="Employee Name" />
+            <Input id="idEmpName" value="{/empStr/empName}"/>
+            <Label text="Salary" />
+            <Input id="idSal" value="{/empStr/salary}"/>
+            <Label text="Currency" />
+            <Input id="idCurr" value="{/empStr/currency}"/>
+            <Label text="Smoker" />
+            <CheckBox selected="{/empStr/smoker}"></CheckBox>
+            <Label />
+            <Button text="Flip" press="onFlip" />
+            <Button text="Print" press="onPrint" />
+            <Button text="Change" press="onChange" />
+        </f:content>
+    </f:SimpleForm>
+</mvc:View>

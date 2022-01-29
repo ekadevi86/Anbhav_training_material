@@ -1,0 +1,29 @@
+.avengers{
+    width: 200px;
+    float:left;
+    margin: 5px;
+}
+.spiderman{
+    color: red;
+    font-family: cursive;
+    border: 1px solid black;
+    text-align: center;
+    background: yellow;
+}
+.ironman{
+    border: 1px solid black;
+    padding: 3px;
+    background: orange;
+}
+#hunk{
+    background-color: brown;
+}
+input:focus{
+    background-color: black;
+}
+td,th{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+}

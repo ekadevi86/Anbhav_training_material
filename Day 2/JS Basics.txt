@@ -1,0 +1,118 @@
+var x = 10;
+typeof(x);
+x = "10";
+typeof(x);
+x = false;
+typeof(x);
+x;
+var name = "Anubhav Oberoy";
+name.indexOf("Anubhav");
+name.indexOf("Oberoy");
+name.indexOf("Mike");
+name.toUpperCase();
+var aFruits = ["Apple","Banana","Cherry"];
+aFruits;
+aFruits[0];
+aFruits[2];
+aFruits.length;
+aFruits.length - 1;
+aFruits[aFruits.length - 1];
+
+for(var i=0;i<aFruits.length;i++){
+   var item = aFruits[i];
+   console.log(item);
+}
+
+aFruits.push("Pineapple");
+aFruits.pop();
+aFruits.splice(2,0,"Pineapple");
+aFruits.splice(2,1);
+name.split(" ");
+
+var aName = name.split(" ");
+aName.forEach(function(item){
+    console.log(item);
+});
+
+var x= '10';
+typeof(x);
+parseInt(x);
+
+var orderId = "0000000750000";
+orderId.replace(/^0+/, '');
+
+var oEmp = {
+                "empId": 1000,
+                "empName": "Anubhav",
+                "salary": 2500,
+                "currency": "USD"
+};
+
+typeof(oEmp);
+oEmp.empId;
+oEmp.empName = "Ananya";
+oEmp;
+
+
+var empTab = [{
+	"empId": 1000,
+	"empName": "Anubhav ",
+	"salary": 2500,
+	"currency": "USD"
+},{
+	"empId": 1001,
+	"empName": "Raghav",
+	"salary": 9999,
+	"currency": "EUR"
+},{
+	"empId": 1002,
+	"empName": "Syed",
+	"salary": 8500,
+	"currency": "AED"
+}]
+
+empTab[1].salary;
+
+{
+	"empTable": [{
+		"empId": 1000,
+		"empName": "Anubhav ",
+		"salary": 2500,
+		"currency": "USD"
+	}, {
+		"empId": 1001,
+		"empName": "Raghav",
+		"salary": 9999,
+		"currency": "EUR"
+	}, {
+		"empId": 1002,
+		"empName": "Syed",
+		"salary": 8500,
+		"currency": "AED"
+	}],
+	"cities": ["Mumbai", "Delhi", "Chennai", "Vijaywada", "Hyderabad"],
+	"car": {
+		"brand": "BMW",
+		"milage": 12,
+		"model": "X4"
+	}
+
+}
+
+function testJS(){
+    console.log("before calling server");
+    setTimeout(5000);
+    console.log("after calling server");
+}
+testJS();
+
+function wife(){
+    console.log("before calling server");
+    //husband
+    setTimeout(function(){
+        console.log("after calling server");
+    },5000);
+    console.log("left for office");
+}
+
+wife();

@@ -1,0 +1,13 @@
+{
+    "empStr": {
+                "empId": 1009,
+                "empName": "Anurag",
+                "salary": 9500,
+                "currency": "EUR",
+                "smoker": false,
+                "gender": "M",
+                "age": 32,
+                "nationality": "IN"
+            },
+    "empTab": []
+}

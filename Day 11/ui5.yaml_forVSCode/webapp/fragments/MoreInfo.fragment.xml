@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+    <f:SimpleForm >
+        <f:content>
+            <Label text="Color"></Label>
+            <Text text="{color}"></Text>
+            <Label text="Taste"></Label>
+            <Text text="{type}"></Text>
+            <Label text="Price"></Label>
+            <Text text="{price} {currency}"></Text>
+            <Label text="Health Benefit"></Label>
+            <Text text="{healthBenefit}"></Text>
+            <Button text="test code" press="onTest" />
+        </f:content>
+    </f:SimpleForm>
+</core:FragmentDefinition>

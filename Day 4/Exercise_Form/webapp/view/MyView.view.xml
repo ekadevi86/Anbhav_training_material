@@ -1,0 +1,27 @@
+<spiderman:View xmlns:f="sap.ui.layout.form" xmlns:spiderman="sap.ui.core.mvc" xmlns="sap.m" controllerName="mickey.controller.MyView">
+    <!-- <Input id="myField" />
+    <Button text="Click My Btn" press="onClick" /> -->
+    <f:SimpleForm editable="true">
+        <f:content>
+            <Label text="User Name" />
+            <Input id="idUser" />
+            <Label text="Password" />
+            <Input id="idPassword" />
+            <Label />
+            <Button text="Login" press="onLogin" />
+        </f:content>
+    </f:SimpleForm>
+
+    <f:SimpleForm editable="true">
+        <f:content>
+            <Label text="EmpId" />
+            <Input id="idEmpId" value="000001"/>
+            <Label text="EmpName" />
+            <Input id="idEmpName" value="Anubhav"/>
+            <Label text="Salary" />
+            <Input id="idSal" value="50000"/>
+            <Label text="Currency" />
+            <Input id="idCurr" value="EUR"/>
+        </f:content>
+    </f:SimpleForm>
+</spiderman:View>

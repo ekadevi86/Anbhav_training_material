@@ -1,0 +1,77 @@
+.box-title {
+    color: red;
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+}
+.box-content{
+    color: cyan;
+    background: brown;
+    height: 120px;
+    padding: 4px
+}
+.box{
+    width: 150px;
+    border: 1px solid black;
+    float: left;
+    margin: 4px
+}
+#idFn{
+    background-color: aquamarine;
+}
+
+input:focus{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+    font-size: large;
+}
+
+li{
+    float: left;
+    padding: 6px;
+    text-transform: uppercase;
+    color: white;
+    background-color: orange;
+    border: 1px solid black;
+}
+li a{
+    text-decoration: none;  
+    color: white;
+    font-weight: bolder;
+}
+ul{
+    list-style: none;
+    
+}
+#music td, #music th{
+    border: 1px solid black;
+    text-align: center;
+}
+#music th{
+    background-color: brown;
+    color: white;
+    text-transform: uppercase;
+}
+
+#music{
+    border-collapse: collapse;
+}
+#music tr:nth-child(odd){
+    background: yellow;
+}
+#music tr:nth-child(even){
+    background-color: deepskyblue;
+}
+#sap{
+    opacity: 0.4;
+}
+#sap:hover{
+    border: 5px dashed red;
+    width: 500px;
+    height:500px;
+    opacity: 1;
+
+}
