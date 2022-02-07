@@ -1,0 +1,71 @@
+<mvc:View xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+                xmlns:t="sap.ui.table" xmlns:core="sap.ui.core" controllerName="mickey.controller.MyView">
+    <!-- <Input id="myField" /> -->
+    <Button text="Click My Btn" press="onClick" />
+    <t:Table id="idTable" selectionMode="Single" visibleRowCount="5">
+        <t:columns>
+            <t:Column>
+                <t:label>
+                    <Label text="Employee ID" />                    
+                </t:label>
+                <t:template>
+                    <Text text="{empId}" />
+                </t:template>
+            </t:Column>
+            <t:Column label="Employee Name">
+                <t:template>
+                    <Input value="{empName}" />
+                </t:template>
+            </t:Column>
+            <t:Column label="Salary">
+                <t:template>
+                    <Text text="{salary} {currency}" />
+                </t:template>
+            </t:Column>
+            <t:Column label="Smoker">
+                <t:template>
+                    <CheckBox selected="{smoker}"></CheckBox>
+                </t:template>
+            </t:Column>
+            <t:Column label="Gender">
+                <t:template>
+                    <Image src="{gender}" width="30px" height="30px"/>
+                </t:template>
+            </t:Column>
+            <t:Column label="Rating">
+                <t:template>
+                    <RatingIndicator value="{rating}"></RatingIndicator>
+                </t:template>
+            </t:Column>
+            <t:Column label="Marital Status">
+                <t:template>
+                    <Select selectedKey="{mStat}">
+                        <items>
+                            <core:Item text="Married" key="M" />
+                            <core:Item text="Single" key="S" />
+                            <core:Item text="Divorced" key="D" />
+                        </items>
+                    </Select>
+                </t:template>
+                
+            </t:Column>
+        </t:columns>
+    </t:Table>
+
+    <f:SimpleForm editable="true" id="idEmployeeForm">
+        <f:content>
+            <Label text="Employee ID" />
+            <Input id="idEmpId" value="{/empStr/empId}"/>
+            <Label text="Employee Name" />
+            <Input id="idEmpName" value="{path : '/empStr/empName'}"/>
+            <Label text="Salary" />
+            <Input id="idSal" value="{= ${/empStr/empName} === 'Anubhav' ? 50000 : ${/empStr/salary} }"/>
+            <Label text="Currency" />
+            <Input id="idCurr" value="{/empStr/currency}" enabled="{= ${/empStr/empName} === 'Anubhav'? true:false}"/>
+            <Label text="Smoker" />
+            <CheckBox id="idSmk" selected="{/empStr/smoker}"></CheckBox>
+            <Label />
+            <Button text="Change" press="onChange" />
+        </f:content>
+    </f:SimpleForm>
+</mvc:View>

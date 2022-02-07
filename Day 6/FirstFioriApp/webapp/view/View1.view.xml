@@ -1,6 +1,0 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-controllerName="tcs.fin.payroll.controller.View1">
-    <Page title="View 1">
-        <Button text="Click Me" ></Button>
-    </Page>
-</mvc:View>

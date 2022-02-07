@@ -1,0 +1,14 @@
+specVersion: '2.5'
+metadata:
+  name: fiorilikeapp
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: true,
+        backend:
+        - path: /sap
+          url: http://103.207.171.202:8021
+          destination: CFN

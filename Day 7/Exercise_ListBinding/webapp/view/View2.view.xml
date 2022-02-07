@@ -1,6 +1,0 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-controllerName="tcs.fin.payroll.controller.View2">
-    <Page title="View 2" showNavButton="true" navButtonPress="onBack">
-    
-    </Page>
-</mvc:View>

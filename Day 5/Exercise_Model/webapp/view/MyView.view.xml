@@ -1,0 +1,20 @@
+<core:View xmlns:core="sap.ui.core.mvc" xmlns="sap.m" 
+           xmlns:f="sap.ui.layout.form"
+           controllerName="mickey.controller.MyView">
+    <!-- <Input id="myField"/>
+    <Button text="Click Me" press="onClick"/> -->
+    <f:SimpleForm>
+        <f:content>
+            <Label text="EmpId" />
+            <!--Binding of data with UI Control - Input field receive data from model address-->
+            <Input id="idEmpId" value="{/empStr/empId}" />
+            <Label text="EmpName" />
+            <!--this syntax is called complex binding syntax in UI5-->
+            <Input id="idEmpName" value="{path : '/empStr/empName'}" />
+            <Label text="Salary" />
+            <Input id="idSal"/>
+            <Label text="Currency" />
+            <Input id="idCurr"/>
+        </f:content>
+    </f:SimpleForm>
+</core:View>

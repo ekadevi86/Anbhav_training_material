@@ -1,3 +1,0 @@
-run `npm install` command in your project directory
-if you want to use UI5 server then install ui5 cli globally
-`npm install @ui5/cli` followed by `ui5 serve`

@@ -1,0 +1,4 @@
+<spiderman:View xmlns:f="sap.ui.layout.form" xmlns:spiderman="sap.ui.core.mvc" xmlns="sap.m" controllerName="mickey.controller.MyView">
+    <Input id="myField" />
+    <Button text="Click My Btn" press="onClick" />
+</spiderman:View>
